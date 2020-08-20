@@ -1,0 +1,42 @@
+{
+    "name": "Terraform devcontainer",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [],
+    "remoteUser": "vscode",
+    "containerUser": "vscode",
+    "extensions": [
+        "hashicorp.terraform",
+        "coenraads.bracket-pair-colorizer-2",
+        "donjayamanne.githistory",
+        "eamodio.gitlens",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "settings": {
+        "editor.matchBrackets": "never",
+        "bracket-pair-colorizer-2.scopeLineCSS": [
+            "borderStyle : solid",
+            "borderWidth : 2px",
+            "borderColor : {color}",
+            "opacity: 0.5"
+        ],
+        "bracket-pair-colorizer-2.colors": [
+            "Silver",
+            "Gold",
+            "Orchid",
+            "LightSkyBlue"
+        ],
+        "bracket-pair-colorizer-2.showVerticalScopeLine": true,
+        "bracket-pair-colorizer-2.showBracketsInGutter": true,
+        "bracket-pair-colorizer-2.highlightActiveScope": true,
+        "terminal.integrated.shell.linux": "/usr/bin/zsh",
+        "terraform.languageServer": {
+            "external": true,
+            "args": [
+                "serve"
+            ],
+            "maxNumberOfProblems": 100,
+            "trace.server": "off"
+        },
+        "terminal.integrated.copyOnSelection": true
+    }
+}

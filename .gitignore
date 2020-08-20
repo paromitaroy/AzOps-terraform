@@ -1,0 +1,24 @@
+#  Local .terraform directories
+**/.terraform
+
+# Crash log files
+**/crash.log
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+*.private.tfvars
+*.private.auto.tfvars
+# .tfvars files
+##*.tfvars
+##*.tfvars.json
+
+# HCL files (for backend configs)
+*.hcl
+
+# Terraform plan
+*tfplan*
+
+# az cli files
+.azure

@@ -1,0 +1,28 @@
+{
+    "editor.tabSize": 2,
+    "terraform.languageServer": {
+        "args": [
+            "serve",
+            "-log-file=/tmp/terraform-ls-{{pid}}.log",
+            "-tf-log-file=/tmp/tf-exec-{{lsPid}}-{{args}}.log"
+        ],
+        "external": true
+    },
+    "terminal.integrated.copyOnSelection": true,
+    "editor.matchBrackets": "never",
+    "bracket-pair-colorizer-2.scopeLineCSS": [
+        "borderStyle : solid",
+        "borderWidth : 2px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ],
+    "bracket-pair-colorizer-2.colors": [
+        "Silver",
+        "Gold",
+        "Orchid",
+        "LightSkyBlue"
+    ],
+    "bracket-pair-colorizer-2.showVerticalScopeLine": true,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "bracket-pair-colorizer-2.highlightActiveScope": true
+}
